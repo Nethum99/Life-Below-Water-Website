@@ -1,0 +1,233 @@
+
+
+/* -------------------------------------------------------------content page style start------------------------------------------------------ */
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    /* input your background image */
+    background-image: url("backgroundcontent.jpg");     
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenthead h1{
+    text-align: center;
+    justify-content: center;
+    font-size:6rem;
+    color:rgb(85, 255, 0);
+    background-image: linear-gradient(to right,rgba(4, 4, 4, 0.834), rgba(230, 233, 255, 0.645));
+    border-radius: 100px;
+    font-weight:bold;
+    margin-top:150px;
+    margin-bottom:300px;
+    /* margin-left:200px; */
+    transition: 0.25s;
+    text-transform: uppercase;
+}
+
+.contenthead h1:hover{
+    color:white;
+}
+
+.contentSubTopic1 h3{
+    text-align: center;
+    justify-content: center;
+    font-size:4rem;
+    color:white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,hsla(0, 100%, 3%, 0.777), rgba(0, 23, 234, 0.81));
+    margin-right:500px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    -webkit-text-stroke:2px hsl(0, 0%, 0%) ;
+    animation:back 20s linear infinite;
+    height: 100px;
+}
+
+@keyframes back{
+    100%{
+        background-position: 5000px 0;
+    }
+    
+}
+
+.contentSubTopic1 p{
+    font-size:1.5rem;
+    color:white;
+    width: 70%;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.532);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+}
+
+#img1{
+    width:400px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    border-radius:50px;
+    box-shadow:5px 5px 25px black;
+    margin-right:20px;
+}
+
+.contentSubTopic2 h3{
+    text-align: center;
+    justify-content: center;
+    font-size:4rem;
+    color:white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left,hsla(176, 100%, 45%, 0.918), rgba(0, 1, 2, 0.704));
+    margin-top:200px;
+    margin-left:400px;
+    margin-bottom: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 100px;
+    -webkit-text-stroke:2px hsl(0, 0%, 0%) ;
+    animation: back 20s linear infinite;
+}
+
+.contentSubTopic2 img{
+    width:400px;
+    height: 300px;
+    margin-top:30px;
+    margin-left:20px;
+    border-radius:50px;
+    box-shadow:5px 5px 15px black;
+}
+
+
+
+
+.contentSubTopic2 a:hover{
+    text-decoration: underline;
+}
+
+
+.contentSubTopic2 p{
+    margin-top:60px;
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 0, 0.553);
+    border-radius: 20px;
+    
+}
+
+.contentSubTopic2 p, .contentSubTopic2 ul{
+    font-size:1.5rem;
+    color:white;
+    /* margin-top:10px; */
+    margin-left:450px;
+    position: absolute;
+
+}
+
+
+.contentSubTopic3 h3{
+    text-align: center;
+    justify-content: center;
+    font-size:4rem;
+    color:white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, hsl(198, 99%, 42%),#000080);
+    margin-top:150px;
+    margin-right:500px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    -webkit-text-stroke:2px hsl(0, 0%, 0%) ;
+    animation:back 20s linear infinite;
+    height: 100px;
+    
+}
+
+.contentSubTopic3 img{
+    width:400px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    border-radius:50px;
+    box-shadow:5px 5px 25px black;
+    margin-right:20px;
+}
+
+.contentSubTopic3 p{
+    font-size:1.5rem;
+    color:white;
+    width: 60%;
+    margin-top: 40px;
+    margin-left:20px;
+    margin-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.532);
+    backdrop-filter: blur(100px);
+    border-radius:20px;
+}
+
+
+
+
+.contentSubTopic4 h3{
+    text-align: center;
+    justify-content: center;
+    font-size:4rem;
+    color:white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left,hsla(248, 100%, 20%, 0.741), hsl(0, 0%, 100%));
+    margin-top:200px;
+    margin-left:400px;
+    margin-bottom: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 100px;
+    -webkit-text-stroke:2px hsl(0, 0%, 0%) ;
+    animation: back 20s linear infinite;
+}
+
+.contentSubTopic4 img{
+    width:400px;
+    height: 300px;
+    margin-top:30px;
+    margin-left:20px;
+    margin-bottom: 50px;
+    border-radius:50px;
+    box-shadow:5px 5px 15px black;
+}
+
+.contentSubTopic4 p{
+    font-size:1.5rem;
+    color:white;
+    /* margin-top:10px; */
+    margin-left:450px;
+    position: absolute;
+    margin-top:60px;
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 0, 0.553);
+    border-radius: 20px;   
+}
+
+
+
+#jump{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+}
+
+#jump a{
+    text-decoration: none;
+    color:rgb(0, 53, 244);
+    transition: 0.25s;
+    box-shadow:5px 5px 15px rgb(255, 255, 255);
+    border-radius: 20px;
+    /* background-color: white; */
+}
+
+#jump a:hover{
+    font-size:1.7rem;
+    color:hsl(4, 100%, 41%);
+    background-color: black;
+}

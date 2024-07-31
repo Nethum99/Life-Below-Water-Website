@@ -1,0 +1,115 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-color: rgb(155, 240, 255);
+    padding-bottom: 70px;
+    
+}
+
+.container form{
+    padding: 20px;
+    width:700px;
+    background-color: white;
+    box-shadow: 0px 6px 12px 5px black;
+}
+
+.container form .checkoutDetails{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .checkoutDetails .paymentDetails{
+    flex: 1 1 250px;
+}
+
+.container form .checkoutDetails .paymentDetails .title{
+    font-size: 23px;
+    color: black;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .checkoutDetails .paymentDetails .inputBox{
+    margin: 15px 0;
+}
+
+.container form .checkoutDetails .paymentDetails .inputBox span{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.container form .checkoutDetails .paymentDetails .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .checkoutDetails .paymentDetails .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .checkoutDetails .paymentDetails .flex{
+    
+    gap:15px;
+  }
+  
+  .container form .checkoutDetails .paymentDetails .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container form .checkoutDetails .paymentDetails .inputBox img{
+    margin-top: -3.6rem;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0 0 1px #000);
+
+  }
+  
+  .container form .paymentConfirmButton{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #846af8;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .paymentConfirmButton:hover{
+    background: #d32323;
+  }
+
+  .container form .checkoutDetails .paymentDetails .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    appearance: none; /* Remove default arrow in select */
+    -webkit-appearance: none; /* Remove default arrow for webkit browsers */
+    -moz-appearance: none; /* Remove default arrow for firefox */
+    background: url('data:image/svg+xml;utf8,<svg fill="%23333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0z"/></svg>') no-repeat right 10px center; /* Add custom arrow */
+    background-size: 20px; /* Adjust arrow size */
+}
+
+.container form .checkoutDetails .paymentDetails .inputBox select:focus {
+    border: 1px solid #000;
+}

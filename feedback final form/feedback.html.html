@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE BELOW WATER</title>
+    
+    <link rel="icon" type="image/png" href="Blue Hand Drawn Sea Whale Fish Logo (1).png">
+
+    <link rel="stylesheet" href="feedbackstyle.css">
+    
+</head>
+<body>
+
+    <header>
+        <a href="#">
+            <img src="Blue Hand Drawn Sea Whale Fish Logo (1).png" alt="logo" class="logo">
+        </a>
+
+        <nav id="navbar">
+            <a href="#/Users/Lenovo/Desktop/all/home/home.html.html" id="home">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Shop</a>
+            <a href="#">User Profile</a>
+            <a href="#">Feedback</a>
+            <a href="#">Sitemap</a>
+
+            
+        </nav>
+        <div class="icons">
+            <ion-icon name="search-outline" id="searchbtn"></ion-icon>   
+            <ion-icon name="cart-outline" id="cartbtn"></ion-icon>
+            <ion-icon name="menu-outline" id="menubtn"></ion-icon>
+        </div>
+    </header>
+
+    <div id="search">
+        <input type="search" id="searchBar" placeholder="Search here...">
+    </div>
+
+    <main>
+        <video autoplay loop muted plays-inline class="back_video">
+            <source src="video3.mp4.mp4" type="video/mp4">
+    
+        </video>
+       
+    
+        <div class="form">
+            <form>
+                <fieldset>
+                    <h1>Feedback Form</h1>
+    
+                    <div class="name_box">
+                        <label for="name">*Enter your name:</label>
+                        <input type="text" id="name" placeholder="Enter names here">
+                        <div id="nameError"></div>
+                        <br>
+                    </div>
+    
+                    <div class="email_box">
+                        <label for="email">*Enter your email:</label>
+                        <input type="email" id="email"  placeholder="Enter email here">
+                        <div id="emailError"></div>
+                    </div>
+    
+                    <br><br>
+                    <lable>Was this your first time visiting?</lable>
+                    <br>
+    
+                    <div class="radio_btn">
+                        <input type="radio" id="yesbtn1" name="selection1" value="Yes">
+                        <label for="yesbtn1" class="color">Yes</label>
+                        <input type="radio" id="nobtn1" name="selection1" value="No">
+                        <label for="nobtn1" class="color">No</label>
+                        <div id="radioBtnError"></div>
+                    </div>
+    
+                    <br>
+                    <lable>Was this website informative and easy to navigate through?</lable>
+                    <br>
+    
+                    <div class="radio_btn">
+                        <input type="radio" id="yesbtn2" name="selection2" value="Yes">
+                        <label for="yesbtn2" class="color">Yes</label>
+                        <input type="radio" id="nobtn2" name="selection2" value="No">
+                        <label for="nobtn2" class="color">No</label>
+                        <div id="radio1BtnError"></div>
+                        
+                    </div>
+    
+                    <br><br>
+                    <div class="comment_box">
+                        <label>*if "No", suggest any improvements for the future:</label>
+                        <br><br>
+                    
+                    <textarea class="comment" id="suggestions" placeholder="Add your massage here"></textarea>
+                        <div id="commentError"></div>
+                    </div>
+                    <br><br>
+                    
+                    <p id="p1">How satisfied are you with our service? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</p>
+    
+                    <div class="satisfactory">
+    
+                        <label class="number">1</label>
+    
+                        <label class="number">2</label>
+                        <label class="number">3</label>
+                        <label class="number">4</label>
+                        <label class="number">5</label>                    
+                        <label class="number">6</label>                
+                        <label class="number">7</label>
+                        <label class="number">8</label>
+                        <label class="number">9</label>
+                        <label class="number">10</label>
+                        
+                    </div>
+                    <div class="radio">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Not satisfied at all">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="very unsatisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Unsatisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Fair">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Satisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Quit satisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Satisfied to some extent">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Satisfied to a great extent">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Very satisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Extremely satisfied">
+                        <div id="satisfiedError"></div>
+                    </div>
+    
+                    <div class="recommend">
+    
+                        <p>Would you recommend our service?</p>
+    
+                        <input type="radio" id="yes_btn" name="selection3" value="Yes">
+                        <label for="yes_btn" class="color">Yes</label>
+                        <input type="radio" id="no_btn" name="selection3" value="No">
+                        <label for="no_btn" class="color">No</label>
+                        
+                    </div>
+    
+                    <div class="update">
+                        <p>*Would you like to recieve update about the website and any offers?</p>
+    
+                        <select id="dropdown">
+                            <option value="">Please select an option</option>
+                            <option value="via Email">Yes-via Email</option>
+                            <option value="via Whatsapp">Yes-via Whatsapp</option>
+                        </select>
+                
+                        <div id="selectError"></div>
+                    </div>
+    
+                    <div>
+                        <p>Do you have any additional questions or request?</p>
+    
+                        <textarea class="comment" placeholder="Add your massage here"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="file:///C:/Users/Lenovo/Documents/java%20script.js/Web/test.html">
+                            <input type="submit" id="mySubmit" >
+                        <a>
+                    </div>
+    
+                    <!-- for preview button -->
+                    <div class="previewForm">
+                        <button id="preview">Preview Feedback</button>
+                        <!-- <input type="submit" id="preview" value="Preview Feedback"> -->
+                    </div>
+    
+                </fieldset>
+            </form>
+        </div>
+    
+    
+        <br><br>
+        <fieldset id="previewFieldset">
+            <div id="previewContent">
+            
+            </div>
+        </fieldset>
+    
+    
+    
+        <div class="container" id="popup">
+            <div class="popup">
+                <img src="tick.jpg" alt="tick" id="image">
+                <h1>Thank you!</h1>
+                <p>Your feedback has been successfully submitted.</p>
+    
+                <button type="button" id="colseBtn">OK</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram" class="social" ></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google" class="social"></ion-icon></a>
+            </div>
+            <div class="footerNav" id="foot">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">User Profile</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <span class="dessinger">Team 7</span></p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="NavAndFooter.js"></script>
+    <script src="validate.js"></script>
+</body>
+</html>

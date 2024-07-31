@@ -1,0 +1,136 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Roboto", "Lucida Sans";
+    font-weight: 750;
+    font-style: normal;
+
+} */
+
+/* body{
+    min-height:100vh;
+    display: flex;
+} */
+.back_video{
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    position: fixed;
+    width:100%;
+    overflow: hidden;
+
+   
+}
+
+
+
+/* main tag style */
+section{
+    /* padding-top:135px; */
+    color:white;
+    padding: 10rem 1%;
+    
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    transition: 2s;
+}
+
+/* .home .content{
+    max-width:60rem;
+    
+    
+} */
+
+.home .content h1{
+    font-size:180px;
+    line-height: 160px;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke:2px #f7f7f7 ;
+    background: url("back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    margin-top:50px;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+    
+}
+
+.home .content h3{
+    font-size:4rem;
+    text-transform:inherit;
+    text-align: center;
+    margin-top:200px;
+    margin-left:490px;
+
+    color:#fffb00;
+    border-bottom:2px solid rgb(199, 199, 199);
+
+    max-width:500px;
+    box-shadow:5px 5px 25px rgba(248, 246, 246, 0.767);
+    border-radius: 100px;
+}
+
+.home .content p{
+    width:100%;
+    font-size:1.2rem;
+    font-weight:lighter;
+    /* font-weight: bold; */
+    color:hsl(0, 0%, 100%);
+    line-height: 1.8;
+    padding:1rem 0;
+    border:2px solid;
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    box-shadow:1px 1px 55px hsla(0, 0%, 9%, 0.652);
+    border:none;
+    /* margin-left:-100px; */
+    margin-top:100px;
+}
+
+#Morebtn{
+    width:170px;
+    height: 48px;
+    font-size: 20px;
+    margin-top:70px;
+    border-radius:20px;
+    background-color: hwb(33 9% 0% / 0.842);
+    /* background-color: transparent; */
+    cursor: pointer;
+    border:none;
+    box-shadow:1px 10px 35px rgba(248, 245, 245, 0.389);
+    transition: 0.25s;
+
+}
+
+#Morebtn:hover{
+    color:white;
+    width:175px;
+    height:53px;
+    background-color: hsl(33, 100%, 50%);
+    
+}
+
+#Morebtn:active{
+    background-color: hsl(22, 100%, 50%);
+
+}
+
+@media (max-width: 850px){
+    .back_video{
+        width:100%;
+    }
+}
+
+
+/* footer section */

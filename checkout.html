@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to checkout form stylesheet -->
+    <link rel="stylesheet" href="./CSS/checkout.css">
+    <title>Checkout Form</title>
+</head>
+<body>
+    
+    <!-- Container for the checkout form -->
+    <div class="container">
+        <!-- Checkout form -->
+        <form class="paymentWindow" id="paymentWindow" action="post">
+            <!-- Billing address section -->
+            <div class="checkoutDetails">
+                <div class="paymentDetails">
+                    <!-- Billing address title -->
+                    <h2 class="title">Billing Address</h2>
+                    <!-- Full Name input field -->
+                    <div class="inputBox">
+                        <span>Full Name</span>
+                        <input type="text" name="fullName" placeholder="Dean Heighsenwood">
+                    </div>
+                    <!-- Email input field -->
+                    <div class="inputBox">
+                        <span>Email</span>
+                        <input type="text" name="email" placeholder="name@email.com">
+                    </div>
+                    <!-- Address input field -->
+                    <div class="inputBox">
+                        <span>Address</span>
+                        <input type="text" name="address" placeholder="No 00/example road/city">
+                    </div>
+                    <!-- City input field -->
+                    <div class="inputBox">
+                        <span>City</span>
+                        <input type="text" name="city" placeholder="City">
+                    </div>
+                    <!-- State and Zip input fields -->
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Country</span>
+                            <input type="text" name="country" placeholder="Your country">
+                        </div>
+                        <div class="inputBox">
+                            <span>Zip</span>
+                            <input type="text" name="zip" placeholder="1002">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paymentDetails">
+                    <!-- Payment details title -->
+                    <h2 class="title">Payment</h2>
+                    <!-- Accepted cards and card name input field -->
+                    <div class="inputBox">
+                        <span>Accepted Cards</span>
+                        <img src="./images/payment.png" alt="">
+                    </div>
+                    <!-- Card name input field -->
+                    <div class="inputBox">
+                        <span>Name On Card</span>
+                        <input type="text" name="cardName" placeholder="Dean Heighsenwood">
+                    </div>
+                    <!-- Card number input field -->
+                    <div class="inputBox">
+                        <span>Credit Card Number</span>
+                        <input type="text" name="cardNumber" placeholder="1234 567 8790">
+                    </div>
+
+                    <!-- Expiry month, year, and CVV input fields -->
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expire Month</span>
+                            <!-- Select input for expiry month -->
+                            <select name="expireMonth">
+                                <!-- Options for expiry month -->
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span>Expire Year</span>
+                            <!-- Select input for expiry year -->
+                            <select name="expireYear">
+                                <!-- Options for expiry year -->
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV</span>
+                            <!-- CVV input field -->
+                            <input type="text" name="cvv" placeholder="1002">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Submit button for form -->
+            <input type="submit" value="Continue to checkout" class="paymentConfirmButton">
+        </form>
+    </div>
+
+    <!-- Script for form submission -->
+    <script>
+        // Event listener for form submission
+        document.getElementById('paymentWindow').addEventListener('submit', checkoutbutton);
+    </script>
+    <!-- Link to shop.js script -->
+    <script src="./JS/shop.js"></script>
+    <!-- Link to checkout.js script -->
+    <script src="./JS/checkout.js"></script>
+    
+</body>
+</html>

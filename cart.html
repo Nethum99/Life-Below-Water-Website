@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Document</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="./CSS/shop.css">
+    <!-- External icon library -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="showShoppingCartItems()" class="cartBody">        <!--
+    The onload attribute is an event handler attribute that specifies a JavaScript function 
+    to run when the entire page (the DOM tree) has been loaded.-->
+
+
+    <!-- Shopping cart window -->
+    <div class="cartwindow">             
+        <!-- Heading for the shopping cart -->
+        <h1>Shopping Cart</h1>
+        <!-- Container to display shopping cart items -->
+        <div id="shoppingCartElements">
+        </div>
+        <!-- Close button to close the shopping cart -->
+        <div class="closeButton">
+            <!-- Link to shop.html to close the cart -->
+            <a href="./shop.html">
+                <img src="./images/close.jpg" alt="close">
+            </a>
+        </div>
+        <!-- Footer section of the shopping cart window -->
+        <div class="footerCartwindow">
+            <!-- Checkout button to proceed to checkout -->
+            <div class="checkoutButton"> 
+                <button onclick="returnCheckout()">CHECK OUT</button> 
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript code to redirect to cart.html after 3 seconds -->
+    <script>
+        // Use setTimeout function to redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'cart.html';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+    <!-- External JavaScript file -->
+    <script src="./JS/shop.js"></script>
+</body>
+</html>

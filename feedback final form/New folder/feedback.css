@@ -1,0 +1,244 @@
+.back_video{
+    position: fixed;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+    .back_video{
+        width: 100%;
+        height:auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back_video{
+        width: auto;
+        height:100%;
+    }
+}
+
+
+.form{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+}
+
+.form h1{
+    color:rgba(245, 236, 69, 0.929);
+    border-bottom:2px solid rgba(0, 0, 0, 0.451);
+}
+
+fieldset{
+    margin-left:450px;
+    margin-right:450px;
+    backdrop-filter: blur(30px);
+    border-radius:30px;
+    box-shadow: 5px 4px 25px rgba(9, 4, 4, 0.789);
+    font-weight:bold;
+    display: fixed;
+}
+
+@supports (-ms-ime-align: auto){
+    fieldset{
+        margin-left:500px;
+        margin-right:500px;
+    }
+}
+
+
+@media (max-width: 800px){
+    fieldset{
+        transition: .25s;
+        margin-left:20px;
+
+    }
+}
+
+
+.color{
+    color:black;
+}
+
+#name{
+    border-radius:5px;
+    color:black;
+    background-color: hsla(0, 0%, 100%, 0.489);
+    border:none;
+    box-shadow:5px 5px 15px hsla(0, 0%, 0%, 0.762);
+    font-size:18px;
+}
+
+#email{
+    background-color: hsla(0, 0%, 100%, 0.485);
+    border-radius:5px;
+    border:none;
+    box-shadow:5px 5px 15px hsla(0, 0%, 0%, 0.762);
+    font-size:18px;
+}
+
+.comment{
+    border-radius:10px;
+    border:none;
+    box-shadow:5px 5px 15px hsla(0, 0%, 0%, 0.762);
+    background-color: hsla(0, 0%, 100%, 0.466);
+    font-size:18px;
+}
+#mySubmit{
+    font-size:10px;
+}
+
+.satisfactory{
+    margin-top:30px;
+    display: flex;
+    padding-left:155px;
+
+}
+
+.number{
+    padding:10px;
+    color:black;
+}
+
+
+@media (max-width: 800px){
+    .satisfactory{
+        margin-right:100px;
+    }
+}
+
+.radio{
+    padding:-10px;
+    margin-top:-30px;
+
+}
+
+.radiobtn{
+    margin:6px;
+}
+
+#p1{
+    margin-top:-20px;
+}
+.satisfactory .number{
+    padding-bottom:30px;
+    padding-right:9px;
+
+}
+
+#mySubmit{
+    width:30%;
+    height: 30px;
+    font-size:20px;
+    font-weight:bold;
+    background-color:hsla(265, 91%, 58%, 0.521);
+    border-radius:15px;
+    cursor:pointer;
+    transition: background-color 0.6s;
+    border:none;
+    box-shadow:5px 5px 15px rgb(6, 6, 6);
+    margin-top:20px;
+    /* margin-right:200px;    */
+}
+
+
+#mySubmit:hover{
+    background-color:hsla(261, 100%, 57%, 0.992);
+    color:hsl(0, 0%, 100%);
+}
+
+#mySubmit:active{
+    background-color:hsla(261, 98%, 44%, 0.992);
+
+}
+
+#preview{
+    width:180px;
+    height:30px;
+    margin-bottom: 20px;
+    margin-left:200px;
+    cursor: pointer;
+    border-radius: 15px;
+    border:none;
+   
+    background-color: hsla(117, 93%, 30%, 0.979);
+    box-shadow:5px 5px 15px rgb(6, 6, 6);
+    margin-left:-1px;
+    margin-top:40px;
+    font-weight:bold;
+    transition: background-color 0.25s;
+}
+#preview:hover{
+    background-color: hsla(122, 99%, 41%, 0.834);
+    color:white;
+}
+
+#preview:active{
+    background-color: hsl(66, 99%, 41%);
+}
+
+#dropdown{
+    font-size:18px;
+    border-radius:5px;
+}
+
+/* 
+validate */
+
+#nameError, #emailError{
+    color:red;
+    margin-left:120px;
+    font-size:20px;
+    transition: 0.25s;
+}
+#radioBtnError, #radio1BtnError{
+    color:red;
+    margin-left:20px;
+    font-size:20px;
+}
+
+#commentError{
+    color:red;
+    margin-left:20px;
+    font-size:20px;
+}
+
+#selectError{
+    color:red;
+    margin:0;
+    font-size:20px;
+    transition: top 0.25s;
+}
+
+/* preview */
+
+/* #previewFieldset{
+    margin:0;
+}  */
+
+#previewContent{
+    font-size:1rem;
+    text-align: left;
+}
+
+#previewContent p{
+    color:hsl(177, 100%, 50%);
+    font-size:1.2rem;
+}
+
+#previewContent h2{
+    font-size:2rem;
+    font-weight:bold;
+    color:rgb(0, 255, 8);
+    border-bottom:2px solid black;
+    margin-left:20px;
+}
+
+#previewContent strong{
+    color:rgb(222, 221, 221);
+    font-size:1.2rem;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website title -->
+    <title>LIFE BELOW WATER</title>
+    <!-- website favicon -->
+    <link rel="icon" type="image/png" href="./Home_images/logo.png">
+    <!-- link CSS stylesheet -->
+    <link rel="stylesheet" href="./home_CSS/homestyle.css">
+
+    <!-- preconnect links to fonts. this Embed code got from https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- link the video using video tag and set it loop and muted -->
+    <video autoplay loop muted playsinline class="back_video">
+        <source src="./Home_images/video5.mp4" type="video/mp4">
+    </video>
+
+    <!-- navigation bar -->
+    <header>
+        <!-- logo image -->
+        <a href="splash.html">
+            <img src="./Home_images/logo.png" alt="logo" class="logo">
+        </a>
+
+        <!-- navigation bar links -->
+        <nav id="navbar">
+            <a href="home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="profile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+        </nav>
+
+        <!-- serach icon, cart icon and menu icon got from https://ionic.io/ionicons -->
+        <div class="icons">
+            <ion-icon name="search-outline" id="searchbtn"></ion-icon>   
+            <a href="shop.html"><ion-icon name="cart-outline" id="cartbtn"></ion-icon></a>
+            <ion-icon name="menu-outline" id="menubtn"></ion-icon>
+        </div>
+    </header>
+
+    <!-- search bar input -->
+    <div id="search">
+        <input type="search" id="searchBar" placeholder="Search here...">
+    </div>
+
+    
+
+    <!-- home page  -->
+    <main>
+        <section class="home" id="home">
+            <!-- home page content -->
+            <div class="content">
+                <h1>Life below water</h1>
+
+                <a href="#Mission">
+                    <input type="submit" value="More" id="Morebtn">
+                </a>
+
+                <div  id="Mission"></div>
+
+                <div>
+                    <h3>Mission</h3>
+    
+                    <p>Our mission is to raise awareness and promote action for the conservation and sustainable use of life below water. Through engaging content, Marine Biodiversity, Threats to Marine Ecosystems, Conservation and Sustainability, and Ocean Exploration and Research.</p>
+
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- content links -->
+    <h1 id="contentheader">Contents</h1>
+    <div class="content-wrap">
+        <img src="./Home_images/backArrow.png" alt="back/image" id="back">
+
+        <div class="content-links">
+            <div>
+                <span><a href="contentstudent1.html"><img src="./Home_images/img1.jpg" alt="content1img"></a><h4 id="content1">Marine Biodiversity</h4></span>
+                <span><a href="contentstudent2.html"><img src="./Home_images/img2.webp" alt="content2img"></a><h4 id="content2">Threats to Marine Ecosystems</h4></span>
+            </div>
+            <div>
+                <span><a href="contentstudent3.html"><img src="./Home_images/img4.png.jpg" alt="content3img"></a><h4 id="content3">Conservation and Sustainability</h4></span>
+                <span><a href="contentstudent4.html"><img src="./Home_images/img3.png" alt="content4img"></a><h4 id="content4">Ocean Exploration and Research</h4></span>
+            </div>
+        </div>
+        <img src="./Home_images/NextArrow.png" alt="next/image" id="next">
+    </div>
+    
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <!-- social media icons got from https://ionic.io/ionicons -->
+                <a href="#"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google" class="social"></ion-icon></a>
+            </div>
+            <!-- footer navigation links -->
+            <div class="footerNav" id="foot">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="Profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                    <li><a href="pageEditorStudent2.html" target="_blank">Page Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <span class="dessinger">Team 8</span></p>
+        </div>
+    </footer>
+
+
+    <!-- links for icons and this links got from  https://ionic.io/ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- link java script file -->
+    <script src="Home_JS/NavAndFooter.js"></script>
+</body>
+</html>

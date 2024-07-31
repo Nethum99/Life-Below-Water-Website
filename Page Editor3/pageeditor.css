@@ -1,0 +1,54 @@
+*{
+    overflow-x: hidden;
+}
+
+
+.header{
+    font-size: 35px;
+    margin-left: 630px;
+    margin-right: 600px;
+    border: 1rem;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profilePic img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 60px;
+    background-color: rgb(169, 169, 169);
+    padding: 6px;
+}
+
+.profilePic img:hover{
+    transform: scale(1.10,1.10);
+    transition: 0.5s;
+}
+
+.name p{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 605px;
+    margin-right: 530px;
+    color: rgb(255, 255, 255);
+}
+
+.sectionOne{
+    margin: 40px 370px 80px 420px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.sectionOne .topTopic{
+    color: rgb(5, 1, 8);
+    font-size: 28px;
+    padding-left: 5px;
+}
+.sectionOne .sectionOneTopic{
+    margin:20px 20px 20px 20px;
+}

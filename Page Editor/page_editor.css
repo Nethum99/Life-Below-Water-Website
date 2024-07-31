@@ -1,0 +1,81 @@
+*{
+    overflow-x: hidden;
+}
+
+
+
+.header{
+    font-size: 35px;
+    margin-left: 630px;
+    margin-right: 600px;
+    border: 1rem;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profilePic img{
+    width: 380px;
+    height: 400px;
+    border-radius:100%;
+    margin-left: 560px;
+    margin-right: 600px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 6px;
+    z-index: 100;
+    box-shadow: -10px 10px 90px rgb(83, 83, 83);
+    display: flex;
+}
+
+.profilePic img:hover{
+    transform: scale(1.10,1.10);
+    transition: 0.5s;
+}
+
+.name p{
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.role p{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.sectionOne{
+    margin: 40px 370px 80px 420px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.sectionOne:hover{
+    transform: scale(1.10,1.10);
+    transition: 1s;
+
+}
+
+.sectionOne .topTopic{
+    color: rgb(5, 1, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.sectionOne .sectionOneTopic{
+    margin:20px 20px 20px 20px;
+    line-height: 26px;
+}
+
+a {
+    color: inherit; /* or specify your desired color */
+    text-decoration: none;
+}

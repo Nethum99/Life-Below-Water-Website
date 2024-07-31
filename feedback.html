@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web site title -->
+    <title>LIFE BELOW WATER</title>
+    
+    <!-- website favicon image -->
+    <link rel="icon" type="image/png" href="./feedback_images/logo.png">
+    <!-- link CSS stylesheet -->
+    <link rel="stylesheet" href="./feedback_CSS/feedbackstyle.css">
+    <!-- preconnect links to fonts. this Embed code got from https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- naviagtion bar -->
+    <header>
+        <!-- website logo and link it to splash screen -->
+        <a href="home.html">
+            <img src="./feedback_images/logo.png" alt="logo" class="logo">
+        </a>
+
+        <!-- navigation bar links -->
+        <nav id="navbar">
+            <a href="home.html" id="home">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="profile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+        </nav>
+        <!-- serach icon, cart icon and menu icon got from https://ionic.io/ionicons -->
+        <div class="icons">
+            <ion-icon name="search-outline" id="searchbtn"></ion-icon>   
+            <a href="shop.html"><ion-icon name="cart-outline" id="cartbtn"></ion-icon></a>
+            <ion-icon name="menu-outline" id="menubtn"></ion-icon>
+        </div>
+    </header>
+
+    <!-- search bar input -->
+    <div id="search">
+        <input type="search" id="searchBar" placeholder="Search here...">
+    </div>
+
+    <!-- feedback form-->
+    <main>
+        <!-- link the video using video tag and set it loop and muted  -->
+        <video autoplay loop muted playsinline class="back_video">
+            <source src="./feedback_images/video3.mp4.mp4" type="video/mp4">
+    
+        </video>
+       
+        <!-- feedback content -->
+        <div class="form">
+            <form>
+                <fieldset>
+                    <h1>Feedback Form</h1>
+                    <!--  This creates a text input field -->
+                    <div class="name_box">
+                        <label for="name">*Enter your name:</label>
+                        <input type="text" id="name" placeholder="Enter names here">
+                        <!-- this for display error message -->
+                        <div id="nameError"></div>
+                        <br>
+                    </div>
+    
+                    <!-- this created a email input field -->
+                    <div class="email_box">
+                        <label for="email">*Enter your email:</label>
+                        <input type="email" id="email"  placeholder="Enter email here">
+                        <!-- this for display error message -->
+                        <div id="emailError"></div>
+                    </div>
+    
+                    <br><br>
+                    <p>Was this your first time visiting?</p>
+                    <br>
+    
+                    <!-- this creates radio buttons -->
+                    <div class="radio_btn">
+                        <input type="radio" id="yesbtn1" name="selection1" value="Yes">
+                        <label for="yesbtn1" class="color">Yes</label>
+                        <input type="radio" id="nobtn1" name="selection1" value="No">
+                        <label for="nobtn1" class="color">No</label>
+                        <!-- this for display error message -->
+                        <div id="radioBtnError"></div>
+                    </div>
+    
+                    <br>
+                    <p>Was this website informative and easy to navigate through?</p>
+                    <br>
+                    <!-- this creates radio buttons -->
+                    <div class="radio_btn">
+                        <input type="radio" id="yesbtn2" name="selection2" value="Yes">
+                        <label for="yesbtn2" class="color">Yes</label>
+                        <input type="radio" id="nobtn2" name="selection2" value="No">
+                        <label for="nobtn2" class="color">No</label>
+                        <!-- this for display error message -->
+                        <div id="radio1BtnError"></div>
+                        
+                    </div>
+    
+                    <br><br>
+                    
+                    <div class="comment_box">
+                        <label>*if "No", suggest any improvements for the future:</label>
+                        <br><br>
+                    <!-- this creates a text area for comment -->
+                    <textarea class="comment" id="suggestions" placeholder="Add your massage here"></textarea>
+                        <div id="commentError"></div>
+                    </div>
+                    <br><br>
+                    
+                    <p id="p1">How satisfied are you with our service? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</p>
+    
+                    <!-- this creates radio buttons -->
+                    <div class="satisfactory">
+    
+                        <label class="number">1</label>
+    
+                        <label class="number">2</label>
+                        <label class="number">3</label>
+                        <label class="number">4</label>
+                        <label class="number">5</label>                    
+                        <label class="number">6</label>                
+                        <label class="number">7</label>
+                        <label class="number">8</label>
+                        <label class="number">9</label>
+                        <label class="number">10</label>
+                        
+                    </div>
+                    <div class="radio">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Not satisfied at all">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="very unsatisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Unsatisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Fair">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Satisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Quit satisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Satisfied to some extent">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Satisfied to a great extent">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Very satisfied">
+                        <input type="radio" class="radiobtn" name="radioSelect" value="Extremely satisfied">
+                        <!-- to display error massege -->
+                        <div id="satisfiedError"></div>
+                    </div>
+    
+                    <div class="recommend">
+    
+                        <p>Would you recommend our service?</p>
+                        <!-- this creates radio buttons -->
+                        <input type="radio" id="yes_btn" name="selection3" value="Yes">
+                        <label for="yes_btn" class="color">Yes</label>
+                        <input type="radio" id="no_btn" name="selection3" value="No">
+                        <label for="no_btn" class="color">No</label>
+                        
+                    </div>
+    
+                    <div class="update">
+                        <p>*Would you like to recieve update about the website and any offers?</p>
+                        
+                        <!-- this creates a dropbox for select one option -->
+                        <select id="dropdown">
+                            <option value="">Please select an option</option>
+                            <option value="via Email">Yes-via Email</option>
+                            <option value="via Whatsapp">Yes-via Whatsapp</option>
+                        </select>
+                        <!-- to display error message -->
+                        <div id="selectError"></div>
+                    </div>
+    
+                    <div>
+                        <p>Do you have any additional questions or request?</p>
+                        <!-- this creates a text area for user's comment -->
+                        <textarea class="comment" placeholder="Add your massage here"></textarea>
+                    </div>
+
+                    <br>
+                    <div>
+                        <!-- this creates text input fields -->
+                        <input type="submit" id="mySubmit" >
+                    </div>
+    
+                    <!-- for preview button -->
+                    <div class="previewForm">
+                        <button id="preview">Preview Feedback</button>
+                        <!-- <input type="submit" id="preview" value="Preview Feedback"> -->
+                    </div>
+    
+                </fieldset>
+            </form>
+        </div>
+    
+        <!-- preview feedback -->
+        <br><br>
+        <fieldset id="previewFieldset">
+            <!-- this for display preview feedback form -->
+            <div id="previewContent"></div>
+        </fieldset>
+    
+    
+        <!-- submit confirmation massege -->
+        <div class="container" id="popup">
+            <div class="popup">
+                
+                <img src="./feedback_images/tick.jpg" alt="tick" id="image">
+                <h1>Thank you!</h1>
+                <p>Your feedback has been successfully submitted.</p>
+    
+                <button type="button" id="colseBtn">OK</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <!-- social media icons got from https://ionic.io/ionicons -->
+                <a href="#"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram" class="social" ></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube" class="social"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google" class="social"></ion-icon></a>
+            </div>
+            <!-- footer navigation links -->
+            <div class="footerNav" id="foot">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="galery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="pageEditorStudent2.html" target="_blank">Page Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <span class="dessinger">Team 8</span></p>
+        </div>
+    </footer>
+
+    <!-- links for icons and this links got from  https://ionic.io/ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- link navigation and footer java script file -->
+    <script src="./feedback_JS/NavAndFooter.js"></script>
+    <!-- link feedback form java script file -->
+    <script src="./feedback_JS/validate.js"></script>
+</body>
+</html>
